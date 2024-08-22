@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A01B11F1-08FB-4027-BF4C-E440293BA668"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D5B9E34-ED0D-43D8-9C75-EECE884E10E4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMorty/Network/CharacterUseCase/CharacterUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getCharacterDetails(charId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7D5B9E34-ED0D-43D8-9C75-EECE884E10E4 - 8664590e1a9859b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for RickAndMorty.CharacterUseCase.getCharacterDetails(charId: Swift.Int) async -&gt; Swift.Optional&lt;RickAndMorty.Character&gt;"
+                  moduleName = "RickAndMorty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gehadv/Desktop/RickAndMorty/RickAndMorty/Network/CharacterUseCase/CharacterUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28">
+               </Location>
+               <Location
+                  uuid = "7D5B9E34-ED0D-43D8-9C75-EECE884E10E4 - 68cc3b9b091df105"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for RickAndMorty.CharacterUseCase.getCharacterDetails(charId: Swift.Int) async -&gt; Swift.Optional&lt;RickAndMorty.Character&gt;"
+                  moduleName = "RickAndMorty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gehadv/Desktop/RickAndMorty/RickAndMorty/Network/CharacterUseCase/CharacterUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4324F978-1D1F-49FF-8BA0-01BCEADAE9DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMorty/Network/CharacterUseCase/CharacterRepo.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getCharacterDetails(charId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4324F978-1D1F-49FF-8BA0-01BCEADAE9DB - 9d1afe795274affe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for RickAndMorty.CharacterRepo.getCharacterDetails(charId: Swift.Int) async -&gt; Swift.Optional&lt;RickAndMorty.Character&gt;"
+                  moduleName = "RickAndMorty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gehadv/Desktop/RickAndMorty/RickAndMorty/Network/CharacterUseCase/CharacterRepo.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27">
+               </Location>
+               <Location
+                  uuid = "4324F978-1D1F-49FF-8BA0-01BCEADAE9DB - cdbfb6bf86aa44c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for RickAndMorty.CharacterRepo.getCharacterDetails(charId: Swift.Int) async -&gt; Swift.Optional&lt;RickAndMorty.Character&gt;"
+                  moduleName = "RickAndMorty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gehadv/Desktop/RickAndMorty/RickAndMorty/Network/CharacterUseCase/CharacterRepo.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27">
+               </Location>
+               <Location
+                  uuid = "4324F978-1D1F-49FF-8BA0-01BCEADAE9DB - 207241cb413e3f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for RickAndMorty.CharacterRepo.getCharacterDetails(charId: Swift.Int) async -&gt; Swift.Optional&lt;RickAndMorty.Character&gt;"
+                  moduleName = "RickAndMorty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gehadv/Desktop/RickAndMorty/RickAndMorty/Network/CharacterUseCase/CharacterRepo.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8BFBB36B-5E56-4EFA-9130-3117B63386F6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMorty/Network/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "performRequest(router:decodeTo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
