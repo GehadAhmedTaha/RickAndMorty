@@ -28,5 +28,4 @@ class CharacterUseCase: CharacterUseCaseProtocol {
         return await characterRepo.getCharacterDetails(charId: charId)
     }
     
-    
 }
