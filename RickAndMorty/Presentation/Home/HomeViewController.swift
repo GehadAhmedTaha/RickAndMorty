@@ -62,6 +62,13 @@ class HomeViewController: UIViewController {
         hostingController.view.backgroundColor = UIColor(red: 32/255, green: 35/255, blue: 41/255, alpha: 1)
         self.navigationController?.pushViewController(hostingController, animated: true)
     }
+    
+    @IBAction func removeFilterPressed(_ sender: Any)  {
+        Task {
+            await self.viewModel?.clearFilter()
+            self.filterCollectionView.reloadData()
+        }
+    }
 }
 
 
@@ -80,7 +87,6 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         Task {
             await viewModel?.didChangeFilter(index: indexPath.row)
-            
         }
     }
     

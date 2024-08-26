@@ -30,12 +30,10 @@ class FilterCollectionViewCell: UICollectionViewCell {
                 Spacer().frame(width: 10)
                 FilterView(title: data)
                 Spacer().frame(width: 10)
-                
-            }
+            }            
         }.background(Constants.characterViewBackgroundColor)
             
     }
- 
 }
 
 #Preview {

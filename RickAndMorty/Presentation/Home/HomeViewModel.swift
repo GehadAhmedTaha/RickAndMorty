@@ -15,6 +15,7 @@ protocol HomeViewModelProtocol {
     mutating func didChangeFilter(index: Int) async
     func getCurrentCharacter(index: Int) -> Character
     mutating func loadMore() async
+    mutating func clearFilter() async
 }
 
 extension HomeViewModelProtocol {
@@ -52,10 +53,14 @@ struct HomeViewModel: HomeViewModelProtocol {
     }
     
     mutating func didChangeFilter(index: Int) async {
-        selectedFilterIdx = filteringItems.enumerated().filter{$0.element == filteringItems[index]}.first.map{$0.offset} ?? 0
         self.currentPage = 0
         allCharacters.removeAll()
-        await getAllCharacters(filters:[Filter.page(currentPage), Filter.status(filteringItems[index])])
+        if index < 0 || index > filteringItems.count - 1 {
+            await getAllCharacters(filters:[Filter.page(currentPage)])
+        } else {
+            await getAllCharacters(filters:[Filter.page(currentPage), Filter.status(filteringItems[index])])
+        }
+        selectedFilterIdx = index
         reloadDataSubject.onNext(true)
 
     }
@@ -72,4 +77,9 @@ struct HomeViewModel: HomeViewModelProtocol {
             reloadDataSubject.onNext(true)
         }
     }
+    
+    mutating func clearFilter() async {
+        await didChangeFilter(index: -1)
+    }
+    
 }

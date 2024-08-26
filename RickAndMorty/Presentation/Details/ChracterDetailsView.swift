@@ -14,7 +14,8 @@ struct ChracterDetailsView: View {
         VStack(alignment: .center,spacing: 10)  {
             AsyncImage(url: URL(string: character.image)) { image in
                 image.resizable()
-                    .aspectRatio(contentMode: .fill).frame(width: 200, height: 200)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(maxWidth: .infinity)
                     .cornerRadius(5)
             } placeholder: {
                 ProgressView()

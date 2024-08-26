@@ -16,11 +16,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0bP-wb-dxc">
-                                <rect key="frame" x="10" y="103" width="373" height="80"/>
+                                <rect key="frame" x="10" y="103" width="323" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="qhf-dY-nab"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0jd-Jt-IzW">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="estimatedItemSize" width="80" height="30"/>
@@ -34,8 +31,20 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="FLo-9z-e6J"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T85-Ky-OZf">
+                                <rect key="frame" x="343" y="103" width="40" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ov3-cd-qjn"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="removeFilterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tfG-nM-PTm"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="igZ-SY-gyY">
-                                <rect key="frame" x="10" y="203" width="373" height="595"/>
+                                <rect key="frame" x="10" y="173" width="373" height="625"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="r8o-sp-dI8"/>
@@ -49,10 +58,13 @@
                             <constraint firstItem="0bP-wb-dxc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5Dz-U7-ELn"/>
                             <constraint firstItem="igZ-SY-gyY" firstAttribute="top" secondItem="0bP-wb-dxc" secondAttribute="bottom" constant="20" id="8pA-4b-fvz"/>
                             <constraint firstItem="igZ-SY-gyY" firstAttribute="leading" secondItem="0bP-wb-dxc" secondAttribute="leading" id="SBQ-sa-ru4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="igZ-SY-gyY" secondAttribute="trailing" constant="10" id="SFC-x8-Z7a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T85-Ky-OZf" secondAttribute="trailing" constant="10" id="SoD-Vo-9Mi"/>
+                            <constraint firstItem="T85-Ky-OZf" firstAttribute="centerY" secondItem="0bP-wb-dxc" secondAttribute="centerY" id="T2Q-sb-0Dw"/>
+                            <constraint firstItem="0bP-wb-dxc" firstAttribute="top" secondItem="T85-Ky-OZf" secondAttribute="top" id="Ue6-Tg-bOv"/>
                             <constraint firstItem="0bP-wb-dxc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="WUW-Ad-SOh"/>
-                            <constraint firstAttribute="trailing" secondItem="0bP-wb-dxc" secondAttribute="trailing" constant="10" id="Z6c-zh-gCV"/>
+                            <constraint firstItem="T85-Ky-OZf" firstAttribute="leading" secondItem="0bP-wb-dxc" secondAttribute="trailing" constant="10" id="nPo-sz-TBS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="igZ-SY-gyY" secondAttribute="bottom" constant="20" id="oWI-WO-Stz"/>
-                            <constraint firstItem="igZ-SY-gyY" firstAttribute="trailing" secondItem="0bP-wb-dxc" secondAttribute="trailing" id="sg5-T2-waQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EMQ-Ym-RDj"/>
