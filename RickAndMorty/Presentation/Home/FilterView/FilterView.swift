@@ -12,20 +12,12 @@ struct FilterView: View {
     var title: String?
     
     var body: some View {
-            Text(title ?? "")
-                .overlay(
-                RoundedRectangle(cornerRadius: 20, style: RoundedCornerStyle.continuous)
-                    .stroke(.black, lineWidth: 1)
-                    .frame(width: 80, height: 30)
-                    
-            )
-      
+        HStack {
+            Text(title ?? "").foregroundColor(.white)
+        }
     }
 }
-/*
- .padding([.trailing], 8)
-               .padding([.top, .bottom], 8)
- */
+
 
 #Preview {
     FilterView()

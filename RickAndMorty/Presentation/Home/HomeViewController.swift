@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import SwiftUI
 
 class HomeViewController: UIViewController {
 
@@ -34,14 +35,15 @@ class HomeViewController: UIViewController {
     private func setupCollectionView() {
         filterCollectionView.delegate = self
         filterCollectionView.dataSource = self
-        filterCollectionView.register(UINib(nibName: "FilterCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "FilterCollectionViewCell")
-
+        filterCollectionView.register(FilterCollectionViewCell.self, forCellWithReuseIdentifier: FilterCollectionViewCell.description())
+        filterCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        filterCollectionView.selfSizingInvalidation = .enabledIncludingConstraints
     }
     
     private func setupTableView() {
         charactersTableView.delegate = self
         charactersTableView.dataSource = self
-        charactersTableView.register(UINib(nibName: "FilterTableViewCell", bundle: nil), forCellReuseIdentifier: "FilterTableViewCell")
+        charactersTableView.register(CharacterTableViewCell.self, forCellReuseIdentifier: CharacterTableViewCell.description())
 
     }
     
@@ -53,7 +55,13 @@ class HomeViewController: UIViewController {
             }
         }).disposed(by: disposeBag)
     }
-                                                                       
+                                
+    private func navigateToDetails(character: Character) {
+        let detailsView = ChracterDetailsView(character: character)
+        let hostingController = UIHostingController(rootView: detailsView)
+        hostingController.view.backgroundColor = UIColor(red: 32/255, green: 35/255, blue: 41/255, alpha: 1)
+        self.navigationController?.pushViewController(hostingController, animated: true)
+    }
 }
 
 
@@ -63,14 +71,16 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCollectionViewCell", for: indexPath) as? FilterCollectionViewCell ?? UICollectionViewCell()
-        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FilterCollectionViewCell.description(), for: indexPath) as? FilterCollectionViewCell,
+              let cellData = self.viewModel?.filteringItems[indexPath.row] else {return UICollectionViewCell()}
+        cell.configure(with: cellData, index: indexPath.row)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         Task {
             await viewModel?.didChangeFilter(index: indexPath.row)
+            
         }
     }
     
@@ -83,9 +93,21 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FilterTableViewCell", for: indexPath) as? FilterTableViewCell ?? UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CharacterTableViewCell.description(), for: indexPath) as? CharacterTableViewCell,
+              let data = self.viewModel?.getCurrentCharacter(index: indexPath.row) else {  return UITableViewCell() }
+        cell.configure(with: data)
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let selectedCharacter = self.viewModel?.getCurrentCharacter(index: indexPath.row) else {return}
+        self.navigateToDetails(character: selectedCharacter )
+    }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let lastIndex = (self.viewModel?.charactersCount), indexPath.row == lastIndex-1 else {return}
+        Task {
+            await self.viewModel?.loadMore()
+        }
+    }
 }

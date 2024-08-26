@@ -27,11 +27,12 @@
 		80CAF47D2C7B87F100425634 /* AllCharactersResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAF47C2C7B87F100425634 /* AllCharactersResponseModel.swift */; };
 		80CAF4842C7B8BF400425634 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAF4832C7B8BF400425634 /* HomeViewModel.swift */; };
 		80CAF4862C7B8C2E00425634 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAF4852C7B8C2E00425634 /* HomeViewController.swift */; };
-		80CAF48F2C7B94A200425634 /* FilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80CAF48E2C7B94A200425634 /* FilterCollectionViewCell.xib */; };
-		80CAF4902C7B94A200425634 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAF48D2C7B94A200425634 /* FilterCollectionViewCell.swift */; };
-		80CAF4932C7B957E00425634 /* FilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80CAF4922C7B957E00425634 /* FilterTableViewCell.xib */; };
-		80CAF4942C7B957F00425634 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAF4912C7B957E00425634 /* FilterTableViewCell.swift */; };
-		80CAF4962C7BDB6500425634 /* FilterCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAF4952C7BDB6500425634 /* FilterCollectionViewItem.swift */; };
+		80CAF4982C7C601000425634 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAF4972C7C601000425634 /* FilterCollectionViewCell.swift */; };
+		80CAF49A2C7C627500425634 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAF4992C7C627500425634 /* FilterView.swift */; };
+		80CAF49D2C7C764800425634 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAF49C2C7C764800425634 /* CharacterTableViewCell.swift */; };
+		80CAF49F2C7C765100425634 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAF49E2C7C765100425634 /* CharacterView.swift */; };
+		80CAF4A52C7C86C300425634 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAF4A42C7C86C300425634 /* Constants.swift */; };
+		80CAF4A82C7C95B800425634 /* ChracterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CAF4A72C7C95B800425634 /* ChracterDetailsView.swift */; };
 		E7425E73D5319F86767E4853 /* libPods-RickAndMortyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF5AD7E06C16FB5AC53F9AE /* libPods-RickAndMortyTests.a */; };
 		F525B5B9CC599A4B8465163E /* libPods-RickAndMorty-RickAndMortyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5354769A6EE41A7FF3BD56 /* libPods-RickAndMorty-RickAndMortyUITests.a */; };
 /* End PBXBuildFile section */
@@ -79,11 +80,12 @@
 		80CAF47C2C7B87F100425634 /* AllCharactersResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharactersResponseModel.swift; sourceTree = "<group>"; };
 		80CAF4832C7B8BF400425634 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		80CAF4852C7B8C2E00425634 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		80CAF48D2C7B94A200425634 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
-		80CAF48E2C7B94A200425634 /* FilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCollectionViewCell.xib; sourceTree = "<group>"; };
-		80CAF4912C7B957E00425634 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
-		80CAF4922C7B957E00425634 /* FilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTableViewCell.xib; sourceTree = "<group>"; };
-		80CAF4952C7BDB6500425634 /* FilterCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewItem.swift; sourceTree = "<group>"; };
+		80CAF4972C7C601000425634 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		80CAF4992C7C627500425634 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		80CAF49C2C7C764800425634 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		80CAF49E2C7C765100425634 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		80CAF4A42C7C86C300425634 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		80CAF4A72C7C95B800425634 /* ChracterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChracterDetailsView.swift; sourceTree = "<group>"; };
 		A2D082CA29E8EEF9171232B7 /* Pods-RickAndMorty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMorty.release.xcconfig"; path = "Target Support Files/Pods-RickAndMorty/Pods-RickAndMorty.release.xcconfig"; sourceTree = "<group>"; };
 		CB23C9356DD81D916B964EDF /* libPods-RickAndMorty.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RickAndMorty.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07FCC18427E2864FC8615A9 /* Pods-RickAndMorty-RickAndMortyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMorty-RickAndMortyUITests.release.xcconfig"; path = "Target Support Files/Pods-RickAndMorty-RickAndMortyUITests/Pods-RickAndMorty-RickAndMortyUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		808E9A502C75DDA100157DDB /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				80CAF4A32C7C86B800425634 /* Utils */,
 				80C0C5622C773ECB004D81FB /* Presentation */,
 				80C0C5612C773E55004D81FB /* Network */,
 				80C0C5602C773E44004D81FB /* DTOs */,
@@ -208,6 +211,7 @@
 		80C0C5622C773ECB004D81FB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				80CAF4A62C7C94F800425634 /* Details */,
 				80CAF4822C7B8BDE00425634 /* Home */,
 			);
 			path = Presentation;
@@ -227,16 +231,47 @@
 		80CAF4822C7B8BDE00425634 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				80CAF49B2C7C761A00425634 /* FilterView */,
+				80CAF4A02C7C765500425634 /* CharacterView */,
 				808E9A572C75DDA100157DDB /* Main.storyboard */,
 				80CAF4832C7B8BF400425634 /* HomeViewModel.swift */,
 				80CAF4852C7B8C2E00425634 /* HomeViewController.swift */,
-				80CAF48D2C7B94A200425634 /* FilterCollectionViewCell.swift */,
-				80CAF48E2C7B94A200425634 /* FilterCollectionViewCell.xib */,
-				80CAF4912C7B957E00425634 /* FilterTableViewCell.swift */,
-				80CAF4922C7B957E00425634 /* FilterTableViewCell.xib */,
-				80CAF4952C7BDB6500425634 /* FilterCollectionViewItem.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		80CAF49B2C7C761A00425634 /* FilterView */ = {
+			isa = PBXGroup;
+			children = (
+				80CAF4972C7C601000425634 /* FilterCollectionViewCell.swift */,
+				80CAF4992C7C627500425634 /* FilterView.swift */,
+			);
+			path = FilterView;
+			sourceTree = "<group>";
+		};
+		80CAF4A02C7C765500425634 /* CharacterView */ = {
+			isa = PBXGroup;
+			children = (
+				80CAF49E2C7C765100425634 /* CharacterView.swift */,
+				80CAF49C2C7C764800425634 /* CharacterTableViewCell.swift */,
+			);
+			path = CharacterView;
+			sourceTree = "<group>";
+		};
+		80CAF4A32C7C86B800425634 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				80CAF4A42C7C86C300425634 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		80CAF4A62C7C94F800425634 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				80CAF4A72C7C95B800425634 /* ChracterDetailsView.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		932548D7DCD737E16A6807ED /* Pods */ = {
@@ -362,9 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				808E9A5E2C75DDA300157DDB /* Assets.xcassets in Resources */,
-				80CAF48F2C7B94A200425634 /* FilterCollectionViewCell.xib in Resources */,
 				808E9A612C75DDA300157DDB /* Base in Resources */,
-				80CAF4932C7B957E00425634 /* FilterTableViewCell.xib in Resources */,
 				808E9A592C75DDA100157DDB /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,21 +527,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				80CAF4722C7B32C000425634 /* CharacterUseCase.swift in Sources */,
-				80CAF4902C7B94A200425634 /* FilterCollectionViewCell.swift in Sources */,
 				80CAF4792C7B33B400425634 /* CharacterStore.swift in Sources */,
+				80CAF4A82C7C95B800425634 /* ChracterDetailsView.swift in Sources */,
 				80CAF46D2C7B1F9400425634 /* Filter.swift in Sources */,
 				80CAF4772C7B338800425634 /* CharacterRepo.swift in Sources */,
 				80CAF47D2C7B87F100425634 /* AllCharactersResponseModel.swift in Sources */,
 				80CAF4862C7B8C2E00425634 /* HomeViewController.swift in Sources */,
+				80CAF49F2C7C765100425634 /* CharacterView.swift in Sources */,
+				80CAF4982C7C601000425634 /* FilterCollectionViewCell.swift in Sources */,
 				80CAF4692C774F9700425634 /* CharacterRouter.swift in Sources */,
 				808E9A5C2C75DDA100157DDB /* RickAndMorty.xcdatamodeld in Sources */,
-				80CAF4962C7BDB6500425634 /* FilterCollectionViewItem.swift in Sources */,
+				80CAF49A2C7C627500425634 /* FilterView.swift in Sources */,
 				80CAF46F2C7B233600425634 /* NetworkManager.swift in Sources */,
 				80CAF4842C7B8BF400425634 /* HomeViewModel.swift in Sources */,
+				80CAF49D2C7C764800425634 /* CharacterTableViewCell.swift in Sources */,
 				808E9A522C75DDA100157DDB /* AppDelegate.swift in Sources */,
-				80CAF4942C7B957F00425634 /* FilterTableViewCell.swift in Sources */,
 				80CAF4672C774CCA00425634 /* Character.swift in Sources */,
 				80CAF4752C7B335100425634 /* Routable.swift in Sources */,
+				80CAF4A52C7C86C300425634 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

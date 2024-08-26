@@ -7,12 +7,20 @@
 
 import SwiftUI
 
-struct CharacterTableViewCell: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class CharacterTableViewCell: UITableViewCell {
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        contentConfiguration = nil
+    }
+    
+    func configure(with data: Character) {
+        self.contentConfiguration =  UIHostingConfiguration {
+            CharacterView(character: data)
+            
+        }.background(Constants.backgroundColor)
     }
 }
-
 #Preview {
     CharacterTableViewCell()
 }

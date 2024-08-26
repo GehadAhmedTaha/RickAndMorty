@@ -14,6 +14,7 @@ class Character: Identifiable, Codable {
     let species: String
     let gender: Gender
     let image: String
+    let location: Location
 }
 
 enum CharacterStatus: String, Codable {
@@ -30,4 +31,10 @@ enum Gender: String, Codable {
     case unknown = "unknown"
 }
 
+
+
+struct Location: Codable {
+    let name: String
+    let url: String
+}
 

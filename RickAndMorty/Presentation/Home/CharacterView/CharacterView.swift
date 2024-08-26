@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct CharacterView: View {
+    
+   var character: Character
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            AsyncImage(url: URL(string: character.image)) { image in
+                image.resizable()
+                    .aspectRatio(contentMode: .fill)
+            } placeholder: {
+                ProgressView()
+            }.frame(width: 80, height: 80)
+            
+            VStack(alignment: .leading) {
+                Text(character.name).fontWeight(.bold).foregroundColor(.white)
+                Text(character.species).foregroundColor(.white)
+            }.padding()
+            Spacer()
+        }.frame(maxWidth: .infinity)
+            .background(Constants.characterViewBackgroundColor)
+            .cornerRadius(10)
+                
     }
 }
 
-#Preview {
-    CharacterView()
-}
